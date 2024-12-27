@@ -110,6 +110,11 @@ if "__main__" == __name__:
         help="Whether or not to use gradient checkpointing to save memory at the expense of slower backward pass.",
     )
     parser.add_argument(
+        "--refine",
+        action="store_true",
+        help="Whether or not to use gradient checkpointing to save memory at the expense of slower backward pass.",
+    )
+    parser.add_argument(
         "--masks_paths",
         nargs='+',
         default=None,
@@ -218,8 +223,8 @@ if "__main__" == __name__:
                 mask = load_and_process_mask(mask_path)
             depth_numpy=np.load(known_depth_path)
 
-
-            depth_numpy=get_filled_for_latents(mask,depth_numpy)
+            if args.refine is not True:
+                depth_numpy=get_filled_for_latents(mask,depth_numpy)
             pipe_out = pipe(
                 input_image,
                 denosing_steps = denoise_steps,

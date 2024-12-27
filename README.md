@@ -97,7 +97,7 @@ The default settings are optimized for the best result. However, the behavior of
   - `--normalize_scale`: When the known depth scale cannot encompass the global scale, it is possible to reduce the normalization scale, allowing the model to better predict the depth of distant objects.
   - `--strength`: When set to 1, the prediction is entirely based on the model itself. When set to a value less than 1, the model is partially assisted by interpolated masked depth to some extent.
   - `--blend`: Whether to use Blend Diffusion, a commonly used technique in image inpainting.
-
+  - `--refine`: If you want to refine depthmap of DUSt3R, or you have a full initial depthmap, turn this option on.
 ## 🌺 Acknowledgements
 This project is developped on the codebase of [Marigold](https://github.com/prs-eth/Marigold) and [MagicAnimate](https://github.com/magic-research/magic-animate). We appreciate their great works! 
 
