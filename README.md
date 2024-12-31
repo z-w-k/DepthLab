@@ -30,7 +30,7 @@ This repository represents the official implementation of the paper titled "Dept
     <br>
   </p>
 
-We present **DepthLab**, a robust depth inpainting foundation model that can be applied to various downstream tasks to enhance performance. Many tasks naturally contain partial depth information, such as (1) *3D Gaussian inpainting*, (2) *LiDAR depth completion*, (3) *sparse-view reconstruction with DUSR3R*, and (4) *text-to-scene generation*. Our model leverages this known information to achieve improved depth estimation, enhancing performance in downstream tasks. We hope to motivate more related tasks to adopt DepthLab.
+We present **DepthLab**, a robust depth inpainting foundation model that can be applied to various downstream tasks to enhance performance. Many tasks naturally contain partial depth information, such as (1) *3D Gaussian inpainting*, (2) *LiDAR depth completion*, (3) *sparse-view reconstruction with DUSt3R*, and (4) *text-to-scene generation*. Our model leverages this known information to achieve improved depth estimation, enhancing performance in downstream tasks. We hope to motivate more related tasks to adopt DepthLab.
 
 ![teaser](docs/teaser_new.png)
 
