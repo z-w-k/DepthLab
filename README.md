@@ -58,7 +58,7 @@ conda activate DepthLab
 ```
 
 ### 📦 Checkpoints
-Download the Marigold checkpoint [here](https://huggingface.co/prs-eth/marigold-depth-v1-0), the image encoder checkpoint [here](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K), and our checkpoints at [HuggingFace](https://huggingface.co/Johanan0528/DepthLab/tree/main). The downloaded checkpoint directory has the following structure:
+Download the Marigold checkpoint [here](https://huggingface.co/prs-eth/marigold-depth-v1-0), the image encoder checkpoint [here](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K), and our checkpoints at [Hugging Face](https://huggingface.co/Johanan0528/DepthLab/tree/main). The downloaded checkpoint directory has the following structure:
 ```
 .
 `-- checkpoints
@@ -75,7 +75,7 @@ Download the Marigold checkpoint [here](https://huggingface.co/prs-eth/marigold-
 ### 📷 Prepare images, masks, known depths
 Masks: PNG/JPG or Numpy, where black (0) represents the known regions, and white (1) indicates the predicted areas.
 
-Know depths: Numpy
+Known depths: Numpy
 
 Images: PNG/JPG
 
@@ -108,7 +108,7 @@ Please cite our paper:
   author       = {Zhiheng Liu and Ka Leong Cheng and Qiuyu Wang and Shuzhe Wang and Hao Ouyang and Bin Tan and Kai Zhu and Yujun Shen and Qifeng Chen and Ping Luo},
   title        = {DepthLab: From Partial to Complete},
   journal      = {CoRR},
-  volume       = {abs/xxxx.xxxxx},
+  volume       = {abs/2412.18153},
   year         = {2024},
 }
 ```
