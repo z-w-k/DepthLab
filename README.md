@@ -105,10 +105,9 @@ This project is developped on the codebase of [Marigold](https://github.com/prs-
 Please cite our paper:
 ```bibtex
 @article{liu2024depthlab,
-  author       = {Zhiheng Liu and Ka Leong Cheng and Qiuyu Wang and Shuzhe Wang and Hao Ouyang and Bin Tan and Kai Zhu and Yujun Shen and Qifeng Chen and Ping Luo},
-  title        = {DepthLab: From Partial to Complete},
-  journal      = {CoRR},
-  volume       = {abs/2412.18153},
-  year         = {2024},
+  title={DepthLab: From Partial to Complete},
+  author={Liu, Zhiheng and Cheng, Ka Leong and Wang, Qiuyu and Wang, Shuzhe and Ouyang, Hao and Tan, Bin and Zhu, Kai and Shen, Yujun and Chen, Qifeng and Luo, Ping},
+  journal={arXiv preprint arXiv:2412.18153},
+  year={2024}
 }
 ```
