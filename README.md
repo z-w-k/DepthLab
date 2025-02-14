@@ -93,7 +93,7 @@ You can find all results in `output/in-the-wild_example`. Enjoy!
 
 The default settings are optimized for the best result. However, the behavior of the code can be customized:
   - `--denoise_steps`: Number of denoising steps of each inference pass. For the original (DDIM) version, it's recommended to use 20-50 steps.
-  - `--processing_res`: The processing resolution. For cases where the mask is sparse, such as in depth completion scenarios, it is advisable to set the 'processing_res' and the mask size to be the same in order to avoid accuracy loss in the mask due to resizing.
+  - `--processing_res`: The processing resolution. **For cases where the mask is sparse, such as in depth completion scenarios, it is advisable to set the 'processing_res' and the mask size to be the same in order to avoid accuracy loss in the mask due to resizing. For non-sparse completion tasks, we recommend using a resolution of 640 or 768 for inference.**
   - `--normalize_scale`: When the known depth scale cannot encompass the global scale, it is possible to reduce the normalization scale, allowing the model to better predict the depth of distant objects.
   - `--strength`: When set to 1, the prediction is entirely based on the model itself. When set to a value less than 1, the model is partially assisted by interpolated masked depth to some extent.
   - `--blend`: Whether to use Blend Diffusion, a commonly used technique in image inpainting.
