@@ -36,6 +36,7 @@ echo "MODE is : ${MODE}"
 echo "FOLDER_PATH is : ${FOLDER_PATH}"
 echo "FILE_TYPE is : ${TYPE}"
 
+cd ..
 # Define input and output paths
 INPUT_IMAGE_PATH="test_cases/${FOLDER_PATH}/RGB.${TYPE}"
 # 检查文件是否存在
@@ -59,13 +60,12 @@ if [[ "$MODE" == *"refine"* ]]; then
 fi
 
 export CUDA_VISIBLE_DEVICES=0
-cd ..
 python infer.py  \
     --seed 1234 \
-    --denoise_steps 40 \
-    --processing_res 512 \
+    --denoise_steps 20 \
+    --processing_res 384 \
     --normalize_scale 1 \
-    --strength 0.8 \
+    --strength .6 \
     --pretrained_model_name_or_path $PRETRAINED_MODEL_NAME_OR_PATH \
     --image_encoder_path $IMAGE_ENCODER_PATH \
     --denoising_unet_path $DENOSING_UNET_PATH \
